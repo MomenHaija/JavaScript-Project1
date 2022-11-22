@@ -1,0 +1,151 @@
+.green-container {
+    width: 100%;
+    height: 100%;
+    margin-left: 4%;
+    margin-top: 5%;
+    padding: 25px 0px;
+
+}
+form{
+    padding-top: 2.5rem;
+    position: relative;
+}
+#aud{
+    position: absolute;
+    top:13px;
+
+    left: 30px;
+    
+}
+.beige-container {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    background-color: #f0e6dd;
+    border-radius: 100px;
+    margin-top: 3%;
+    margin-left: 5%;
+    color: #064f44;
+    font-size: 20px;
+    padding: 20px 0px;
+
+}
+
+.question-div {
+    margin-left: 10%;
+    font-size: xx-large;
+}
+
+#next {
+    width: 150px;
+    height: 50px;
+    color: #f6c9a7;
+    background-color: #064f44;
+    font-size: larger;
+    border-radius: 15px;
+    align-self: center;
+}
+
+#play{
+    width: 100px;
+     color:bisque;
+      background-color:#064f44;
+    position: absolute;
+    left:17%;
+    top:32%;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+#countdown{
+    margin-left: 18%;
+    font-size: xx-large;
+}
+
+#aud {
+    display: none;
+
+}
+
+body {
+    background-image: url("../image/goal.jpg");
+    background-size: cover;
+}
+
+#end {
+    display: none;
+    width: 150px;
+    height: 50px;
+    color: #f6c9a7;
+    background-color: #064f44;
+    font-size: larger;
+    border-radius: 15px;
+    align-self: center;
+
+}
+@media only screen and (min-device-width:0px) and (max-device-width:480px)
+{
+
+    .beige-container{
+        font-size: small;
+    }
+    
+.question-div {
+    font-size: x-large;
+}
+
+body{background-image: none;
+    background-color:#064f44;
+    
+ }
+ 
+}
+
+
+.next,.end{
+    background-color: #064f44;
+    color: #F2DEBA;
+    border-radius: .5rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+    width:15rem;
+    height: 5rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+  }
+  .nex a,.end a{
+    text-decoration: none;
+    color: var(--sectionColor);
+  }
+  .next:hover,.end:hover{
+    transform: scale(1.1);
+    background-color: #013028;
+    box-shadow: 4px 2px 0.75px #013028; 
+    
+  }
+
+label:hover{
+ 
+    cursor: pointer;
+    width: 40%;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #F2DEBA;
+}
+.active{
+    display: inline;
+    cursor: pointer;
+    width: 40%;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #F2DEBA;
+    text-align: center;
+}
+#countdown{
+    margin-bottom: 1rem;
+}

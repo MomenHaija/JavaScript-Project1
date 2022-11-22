@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz-page.css">
+    
+</head>
+
+<body>
+    
+        
+    
+    <audio id="aud" controls><source  src="../Quizpart1/360P.mp3" type="audio/ogg"></audio>
+        <button id="play">play</button>
+
+        <div class="green-container">
+            <div class="beige-container">
+                <div class="question-div">
+                    <form onchange="user_checked()"  id="form">
+
+                        <div id="countdown"></div>
+                        
+                   
+                    <p id="ques"></p>
+                    <input type="radio" name="option" id="answer1">
+                    <label for="answer1" id="labelans1" class="label"></label> <br> <br>
+                    <input type="radio" name="option" id="answer2">
+                    <label for="answer2" id="labelans2" class="label"></label> <br> <br>
+                    <input type="radio" name="option" id="answer3">
+                    <label for="answer3" id="labelans3" class="label"></label> <br> <br>
+                    <input type="radio" name="option" id="answer4" >
+                    <label for="answer4" id="labelans4" class="label"></label> <br> <br>
+                    </form>
+                </div>
+                <button id="next" type="button" onclick="isChecked() " class="next">Next</button>
+                <button id="end" onclick="calcscore1()" class="end"><a href="../between section 1&2/between.html"style="text-decoration:none;color:#f6c9a7;" >End</a></button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>    
+</body>
+
+</html>

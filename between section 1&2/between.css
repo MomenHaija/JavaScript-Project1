@@ -1,0 +1,87 @@
+
+* {
+    box-sizing:border-box;
+    --mainColor:#064E42;
+    --sectionColor:#F2E8DF;
+    --somewordText:#EF8206;
+    --somesectionColor:#F4F1E9;
+    --headerandFooterColor: #262626;
+  
+  }    
+    .beige-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+        width: 70%;
+    height: auto;
+    background-color: #f0e6dd;
+    border-radius: 100px;
+    margin-top: 12%;
+    margin-left: 15%;
+    color: #064f44 ;
+    font-size: 20px;
+    padding: 40px 0px;
+    
+    }
+    .speach{
+text-align: center;
+font-size:xx-large;
+
+    }
+    #second-part{
+        width: auto;
+        height: 50px;
+        color: #f6c9a7;
+        background-color: #064f44;
+        font-size: larger;
+        border-radius: 15px;
+        align-self: center;
+    }
+    h1{
+        background-color: #f6c9a7;
+        color: #064f44;
+        width: auto;
+        height: 55px;
+        border-radius: 15px;
+        align-self: center;
+    }
+    body{
+        background-image: url("../image/goal.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @media only screen and (min-device-width:481px) and (max-device-width:768px)
+{
+    body{background-image: none;
+        background-color:#064f44;
+        
+     }
+}
+{
+
+
+}
+#second-part{
+    background-color: var(--mainColor);
+    color: #F2DEBA;
+    border-radius: .5rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+    width:15rem;
+    height: 5rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+  }
+  #second-part a{
+    text-decoration: none;
+    color: var(--sectionColor);
+  }
+  #second-part:hover{
+    transform: scale(1.1);
+    background-color: #013028;
+    box-shadow: 4px 2px 0.75px var(--mainColor) ;
+    
+  }
+

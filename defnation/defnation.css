@@ -1,0 +1,81 @@
+
+.beige-container{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 80%;
+height: auto;
+background-color: #f0e6dd;
+text-align: center;
+border-radius: 100px;
+margin-top: 3%;
+margin-left: 10%;
+color: #064f44 ;
+font-size: 20px;
+padding: 20px 0px;
+}
+
+span{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#start{
+    width: 150px;
+    height: 50px;
+    color: #f6c9a7;
+    background-color: #064f44;
+    font-size: larger;
+    border-radius: 15px;
+}
+body{
+    background-image: url("../image/goal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.startdef{
+    background-color: var(--mainColor);
+    color: #F2DEBA;
+    border-radius: .5rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+    width:15rem;
+    height: 5rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+  }
+  .startdef a{
+    text-decoration: none;
+    color: var(--sectionColor);
+  }
+  .startdef:hover{
+    transform: scale(1.1);
+    background-color: #013028;
+    box-shadow: 4px 2px 0.75px var(--mainColor) ;
+    
+  }
+
+
+
+@media only screen and (min-device-width:0px) and (max-device-width:480px)
+{
+
+    .beige-container{
+        font-size: small;
+    }
+
+body{background-image: none;
+   background-color:#064f44;
+   
+}
+
+#start{
+    width: 100px;
+    height: 50px;
+    font-size: large;
+   
+}
+}

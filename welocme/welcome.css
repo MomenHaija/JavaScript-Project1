@@ -1,0 +1,150 @@
+* {
+    box-sizing:border-box;
+    --mainColor:#064E42;
+    --sectionColor:#F2E8DF;
+    --somewordText:#EF8206;
+    --somesectionColor:#F4F1E9;
+    --headerandFooterColor: #262626;
+  
+  }
+  body{
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+#welcome_img{
+
+    height: 400px;
+    width: 100%;
+    object-fit:contain;
+}
+#div1{
+    position: relative;
+    background-color:  var(--somesectionColor)
+}
+#div2{
+    position: absolute;
+    top: calc(180rem/16);
+    text-align: center;
+    left:37%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: cursive;
+}
+#div_card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin:2rem auto;
+} 
+.card{
+    text-align: center;
+    font-size: 1.2rem;
+    
+    box-shadow: 4px 2px 0.75px #003013;;    
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    
+}
+  .container {
+    padding: 0.05rem  1rem;
+    background-color: #FFEFD6;
+    padding-bottom: 1.2rem;
+    border-radius: 0.25rem;
+    border:none;
+  }
+  .container:hover{
+    background-color: var(--sectionColor);
+  }
+  .container h2{
+    text-align: center;
+    color: var(--mainColor);
+
+  }
+  
+  .button1{
+
+    background-color: var(--mainColor);
+    color: #F2DEBA;
+    border-radius: .5rem;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    font-size: 1.2rem;
+  }
+  .button1:hover{
+    transform: scale(1.1);
+    background-color: #013028;
+    box-shadow: 4px 2px 0.75px var(--mainColor) ;
+  }
+
+#b1{
+    color:var(--sectionColor);
+    font-family: cursive;
+} 
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width:481px)and (max-device-width:768px){
+    b{
+        font-size: 10px;
+    }
+
+    #div_card{
+        display: grid; 
+        justify-content: space-around;
+        grid-template-columns:auto auto;
+        gap:20px;
+    } 
+
+    #div2{
+        position: absolute;
+        top: 190px;
+        text-align: center;
+        left:30%;
+        font-size: large;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    .container h2 b{
+      font-size: 1.3rem;
+    }
+}
+@media only screen and (min-device-width:0)and (max-device-width:480px){
+
+.container h2 b{
+  font-size: 1.2rem;
+}
+
+    #div2{
+        position: absolute;
+        top: 190px;
+        text-align: center;
+        left:25%;
+        font-size: xx-small;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    #div_card{
+        display: grid; 
+        justify-content: space-around;
+        grid-template-columns:auto;
+        gap:20px;
+    } 
+}

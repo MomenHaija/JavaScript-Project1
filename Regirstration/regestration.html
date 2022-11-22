@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <script src="https://kit.fontawesome.com/cf9682991b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="regestration.css">
+
+</head>
+<body>
+<section>
+    <div class="imgbox">
+        <img src="../image/signup1.jpg">
+    </div>
+    <div class="signupbox">
+        <div class="formbox">
+            <h1>Sign Up</h1>
+            <form>
+                <div  class="fa">
+                    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.google.com/" target="_blank" class="fa fa-google"></a>
+                    <a href="https://www.linkedin.com/feed/?trk=msn-top-arae" target="_blank" class="fa fa-linkedin"></a>
+                </div>
+                <div class="inputbox">
+                    <input id="fname" class="firstname" name="firstname" value="" placeholder="First Name">
+                </div>
+                    <div class="inputbox">
+                    <input id="lname" class="lastname" name="lastname" value="" placeholder="Last Name"><br>
+                </div>
+                
+                
+                <div class="inputbox">
+                    <input 
+                   id="Email" class="email" name="email" value="" placeholder="E-mail"><br>
+                </div>
+                <div class="password">
+                    <input id="pass1" class="password1" type="password" name="password" value="" placeholder="Password">
+                    <input id="pass2" class="password2" type="password" name="cpassword" value="" placeholder="Confirm Password">
+                </div>
+                <div class="birthdate">
+                    <input id="Birth" class="birth" type="date" name="birthdate"  placeholder="Year of Birth">
+                  </div>
+                <div class="already">
+                    <p>Alredy a member?<a href="../Login/logIn.html">log in</a></p>
+                    <p id="already-registered" style="color:red;display: none;">already-registered</p>
+                  
+                    <!-- <p id="M" style="color: red; display: none;" >Password not match!</p> -->
+                    <p class="message" style="color: red; display: none;">password not match!</p>
+                </div>   
+                <div class="submit" >
+                    <input  value="Create" type="submit" name="" onclick="isExist()" id="reg"
+                    style="background-color: #064E42;  
+                    border:1px solid #064E42;
+                    border-radius: 30px;
+                    width: 100px; 
+                    height: 40px; 
+                    color: white; 
+                    margin-bottom:30px ;
+                    transition: transform .1s;">
+                </div>
+                    
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="registration.js"> </script>
+</body>
+</html>

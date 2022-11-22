@@ -1,0 +1,164 @@
+:root {
+
+    --main-color: #064E42;
+    --backrgouns-ques: #F2E8DF;
+    --exorart-color: #F2C8A2;
+}
+
+body {
+
+
+    background-color: #F2C8A2;
+}
+
+#about-img {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+}
+
+#about-img img {
+    border: 2px solid var(--exorart-color);
+    border-radius: 25px;
+    
+}
+
+#about-img div {
+
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+    color: var(--main-color);
+    width: 40%;
+
+}
+
+#about-img div h1 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    text-align: center;
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #about-img div {
+        width: 100%;
+        padding: 20px 10px;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    #about-img div {
+        width: 100%;
+        padding: 20px 10px;
+        line-height: 1;
+        font-size: 0.9rem;
+    }
+
+    #about-img img {
+        width: 300px;
+    }
+}
+
+.animation {
+    margin-top: 2%;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation-name: typing;
+    animation:
+        typing 5s steps(25, end),
+        blink-caret 2s step-start infinite;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes typing {
+    to {
+        width: 0
+    }
+
+    from {
+        width: 50%
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 50%
+    }
+}
+
+@media only screen and (min-device-width:0)and (max-device-width:1200px) {
+    #about-img img {
+        width: 100%;
+    }
+    b {
+        font-size: 10px;
+    }
+
+    .HomeGridImage {
+        width: 182px;
+        height: 180px;
+        border-radius: 25px;
+        margin-left: 30px;
+        margin-top: 20px;
+
+    }
+
+    #divBackground {
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    #regButton {
+        top: 620px;
+    }
+
+    #about-img div h1 {
+        font-size: 1.5rem;
+        color: var(--main-color);
+        text-align: center;
+    }
+
+    #about-img div {
+        line-height: 1.2;
+    }
+
+    #about-img p {
+        line-height: 1.4;
+        padding: 0.2rem 1.5rem;
+
+    }
+
+}
+#footer{
+    
+    background-color: #262626;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #FFEFD6;
+    padding-right: 13px;
+    font-size: large;
+} 
+
